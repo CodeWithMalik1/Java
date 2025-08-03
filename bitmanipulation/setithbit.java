@@ -1,0 +1,13 @@
+import java.util.Scanner;
+
+public class setithbit{
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("enter number: ");
+        int n=sc.nextInt();
+        System.out.print("enter ith bit : ");
+        int i=sc.nextInt();
+        int setbit=n^1<<i;
+        System.out.println(setbit);
+    }
+}
