@@ -1,0 +1,30 @@
+
+import java.util.*;
+public class Main
+{
+    public static void ZeoOneTriangle(int row,int column){
+        int one=1;
+        int zero=0;
+        for(int i=0;i<row;i++){
+            for(int j=0;j<column;j++){
+                if(j<=i){
+                     System.out.print(one);
+                     int temp=one;
+                     one=zero;
+                     zero=temp;
+                }
+                 else System.out.print(" ");
+            }
+            System.out.println();
+        }
+    }
+	public static void main(String[] args) {
+	  int row=5,column=5;
+	   ZeoOneTriangle(row,column);
+	}
+}
+//1
+//01
+//010
+//1010
+//10101
