@@ -1,0 +1,39 @@
+import java.util.*;
+
+public class Main {
+
+    public static void userInput(Scanner sc) {
+
+        int zeros = 0, ones = 0, twos = 0;
+
+        while (true) {
+            System.out.println("Enter 0, 1, 2 or type -1 to exit:");
+
+            int num = sc.nextInt();
+
+            if (num == -1) {
+                break;   // exit condition
+            }
+
+            if (num == 0) {
+                zeros++;
+            } else if (num == 1) {
+                ones++;
+            } else if (num == 2) {
+                twos++;
+            } else {
+                System.out.println("Invalid number!");
+            }
+        }
+
+        System.out.println("Zeros: " + zeros +
+                ", Ones: " + ones +
+                ", Twos: " + twos);
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        userInput(sc);
+        sc.close();
+    }
+}
