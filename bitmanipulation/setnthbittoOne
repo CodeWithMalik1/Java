@@ -1,0 +1,15 @@
+import java.util.*;
+
+public class Main {
+    public static int setnthbittoOne(int n){
+         int pos=1;
+         int mask=1<<pos;
+
+        return n|mask; 
+    }
+    public static void main(String[] args) {
+        int n=5;
+        System.out.println(setnthbittoOne(n));
+ 
+    }
+}
