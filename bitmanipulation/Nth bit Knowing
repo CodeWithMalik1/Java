@@ -1,0 +1,18 @@
+import java.util.*;
+
+public class Main {
+    public static int nthbit(int n){
+         int pos=2;
+         int mask=1<<pos;
+
+        if((n&mask)!=0)
+            return 1;
+            else
+            return 0;   
+    }
+    public static void main(String[] args) {
+        int n=5;
+        System.out.println(nthbit(n));
+ 
+    }
+}
