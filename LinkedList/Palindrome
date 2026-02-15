@@ -1,0 +1,35 @@
+import java.util.*;
+public class main
+{
+  public static boolean palindrome(LinkedList<Integer> li,int n)
+  {
+    int i=0;
+    int j=li.size()-1;
+    while(i<j)
+    {
+        if(li.get(i)!=li.get(j))
+        {
+            return false;
+        }
+        i++;
+        j--;
+    }
+    return true;
+  }
+	public static void main(String[] args) {
+		LinkedList<Integer> li=new LinkedList<>();
+		li.add(20);
+		li.add(30);
+        li.add(40);
+        System.out.println(li);
+        System.out.println(palindrome(li,li.size()));
+        LinkedList<Integer> li1=new LinkedList<>();
+        li1.add(20);
+        li1.add(30);
+        li1.add(20);
+        System.out.println(li1);
+        System.out.println(palindrome(li1,li1.size()));
+
+
+	}
+}
