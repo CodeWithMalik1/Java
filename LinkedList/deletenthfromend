@@ -1,0 +1,25 @@
+import java.util.*;
+public class main
+{
+    public static int deletenthfromend(LinkedList<Integer> li,int n)
+    {
+        int size=li.size();
+        if(n>size)
+        {
+            return -1; // Invalid input
+        }
+        return li.remove(size-n); // Remove and return the nth node from the end
+    }
+	public static void main(String[] args) {
+		LinkedList<Integer> li=new LinkedList<>();
+		li.add(20);
+		li.add(30);
+        li.add(40);
+        System.out.println(li);
+        int n=1;
+        int removedValue=deletenthfromend(li,n);
+        System.out.println("Removed value: " + removedValue);
+        System.out.println(li);
+
+	}
+}
